@@ -1,0 +1,51 @@
+{
+  "name": "petap/laminas-mvc-controller",
+  "description": "Laminas Module.",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Yura Shirokikh",
+      "email": "shirokikh.yura@gmail.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "github",
+      "url": "https://github.com/petap/controller.git"
+    },
+    {
+      "type": "github",
+      "url": "https://github.com/petap/domain-interface.git"
+    }
+  ],
+  "require": {
+    "php": "^7.4",
+    "laminas/laminas-view": "2.12.*",
+    "laminas/laminas-http": "2.14.*",
+    "laminas/laminas-mvc": "3.2.*",
+    "laminas/laminas-modulemanager": "2.10.*",
+    "petap/controller": "dev-master"
+  },
+  "require-dev" : {
+    "phpunit/phpunit": "^9.4",
+    "squizlabs/php_codesniffer": "^3.5",
+    "phpspec/prophecy-phpunit": "^2.0"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "Petap\\LaminasMvcController\\": "src/",
+      "Petap\\LaminasMvcControllerTest\\": "src/"
+    }
+  },
+  "scripts": {
+    "check": [
+      "@cs",
+      "@test"
+    ],
+    "cs": "phpcs",
+    "cs-fix": "phpcbf",
+    "test": "phpunit --colors=always"
+  }
+}

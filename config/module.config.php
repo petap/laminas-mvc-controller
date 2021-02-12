@@ -1,0 +1,27 @@
+<?php
+
+return [
+    'controllers' => [
+        'factories' => [
+            'petap-laminas-mvc-controller' => 'Petap\LaminasMvcController\ControllerFactory',
+            'petap-laminas-mvc-api-controller' => 'Petap\LaminasMvcController\ApiControllerFactory',
+        ],
+    ],
+    'service_manager' => [
+        'factories' => [
+            'petap-laminas-mvc-controller' => 'Petap\LaminasMvcController\ControllerFactory',
+            'petap-laminas-mvc-api-controller' => 'Petap\LaminasMvcController\ApiControllerFactory',
+            'petap-laminas-mvc-criteria-validator-factory' => 'Petap\LaminasMvcController\CriteriaValidatorFactory',
+            'petap-laminas-mvc-changes-validator-factory' => 'Petap\LaminasMvcController\ChangesValidatorFactory',
+            'petap-laminas-mvc-service-factory' => 'Petap\LaminasMvcController\ServiceFactory',
+            'petap-laminas-mvc-view-model-factory' => 'Petap\LaminasMvcController\ViewModelFactory',
+            'petap-laminas-mvc-api-view-model-factory' => 'Petap\LaminasMvcController\ApiViewModelFactory',
+            'petap-laminas-mvc-request-factory' => 'Petap\LaminasMvcController\RequestFactory',
+            'petap-laminas-mvc-api-request-factory' => 'Petap\LaminasMvcController\ApiRequestFactory',
+            'petap-laminas-mvc-response-factory' => 'Petap\LaminasMvcController\ResponseFactory',
+            'petap-laminas-mvc-html-error-factory' => 'Petap\LaminasMvcController\HtmlErrorFactory',
+            'petap-laminas-mvc-api-error-factory' => 'Petap\LaminasMvcController\ApiErrorFactory',
+            'petap-laminas-mvc-options-factory' => 'Petap\LaminasMvcController\OptionsFactory',
+        ],
+    ],
+];
